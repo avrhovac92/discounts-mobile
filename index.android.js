@@ -9,4 +9,4 @@ import {
 } from 'react-native';
 import App from './src/App';
 
-AppRegistry.registerComponent('RateMyTate', () => App);
+AppRegistry.registerComponent('Discounts', () => App);
