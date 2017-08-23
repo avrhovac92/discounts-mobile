@@ -10,8 +10,18 @@
     "test": "jest"
   },
   "dependencies": {
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-node": "5.1.1",
+    "moment": "^2.18.1",
     "react": "16.0.0-alpha.12",
-    "react-native": "0.47.2"
+    "react-native": "0.47.2",
+    "react-native-localization": "^0.1.31",
+    "react-redux": "5.0.6",
+    "redux": "3.7.2",
+    "redux-logger": "3.0.6",
+    "redux-persist": "4.9.1",
+    "redux-persist-migrate": "4.1.0",
+    "redux-thunk": "2.2.0"
   },
   "devDependencies": {
     "babel-eslint": "7.2.3",
