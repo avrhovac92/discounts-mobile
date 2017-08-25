@@ -3,20 +3,18 @@
  *
  * @flow
  */
-import { View, StyleSheet, Text } from 'react-native';
+import { View, StyleSheet, Text, TouchableOpacity } from 'react-native';
+import { homeProps } from '../types';
 import React from 'react';
 
-const Home = () => {
+const Navigation = ({ openNavigation, lang }: homeProps) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.welcome}>Welcome to React Native!</Text>
-      <Text style={styles.instructions}>
-        To get started, edit index.android.js
-      </Text>
-      <Text style={styles.instructions}>
-        Double tap R on your keyboard to reload,{'\n'}
-        Shake or press menu button for dev menu
-      </Text>
+      <TouchableOpacity onPress={openNavigation}>
+        <Text style={[styles.instructions, styles.link]}>
+          {lang.NAVIGATION_GO_TO}
+        </Text>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -37,7 +35,10 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#333333',
     marginBottom: 5
+  },
+  link: {
+    color: 'blue'
   }
 });
 
-export default Home;
+export default Navigation;

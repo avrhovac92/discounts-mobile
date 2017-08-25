@@ -4,9 +4,11 @@
 */
 
 import { routes as homeRoutes } from '@components/home/screens';
+import { routes as navRoutes } from '@components/navigation/screens';
 
 const routes = {
-  ...homeRoutes
+  ...homeRoutes,
+  ...navRoutes
 };
 
 export default routes;

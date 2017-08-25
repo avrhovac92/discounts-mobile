@@ -17,8 +17,7 @@ import getSlideFromRightTransition from 'react-navigation-slide-from-right-trans
 
 const navigatorSettings = {
   initialRouteName: SCREENS.HOME,
-  transitionConfig: getSlideFromRightTransition,
-  headerMode: 'none'
+  transitionConfig: getSlideFromRightTransition
 };
 
 export const AppNavigator = StackNavigator({ ...Routes }, navigatorSettings);
