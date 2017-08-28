@@ -5,14 +5,24 @@
  */
 import { StyleSheet } from 'react-native';
 import { navigationProps } from '../types';
-import MapView from 'react-native-maps';
+import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
 import React from 'react';
 
-const Navigation = ({ region, onRegionChange, initialRegion }: navigationProps) => {
+import MarkerView from './MarkerView';
+
+import mapStyle from '@assets/mapStyle.json';
+
+const Navigation = ({
+  region,
+  onRegionChange,
+  initialRegion
+}: navigationProps) => {
   return (
     <MapView
       style={styles.container}
       onRegionChangeComplete={onRegionChange}
+      customMapStyle={mapStyle}
+      provider={PROVIDER_GOOGLE}
       region={region}
     >
       <MapView.Marker
@@ -20,9 +30,11 @@ const Navigation = ({ region, onRegionChange, initialRegion }: navigationProps) 
           latitude: 44.762855,
           longitude: 17.18251
         }}
-        title="Some random title"
-        description="Some random description"
-      />
+      >
+        <MapView.Callout>
+          <MarkerView />
+        </MapView.Callout>
+      </MapView.Marker>
     </MapView>
   );
 };
