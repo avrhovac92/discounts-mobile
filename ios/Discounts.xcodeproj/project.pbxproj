@@ -37,7 +37,6 @@
 		2DCD954D1E0B4F2C00145EB5 /* DiscountsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* DiscountsTests.m */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		E322F7D1A73B496999FC3ADC /* libAirMaps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B3B4D06D914F9DB6418119 /* libAirMaps.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -230,47 +229,40 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
-		8B9DA4BA1F5033010092CC93 /* PBXContainerItemProxy */ = {
+		8BA1416C1F544D250067482F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 139D7ECE1E25DB7D00323FB7;
 			remoteInfo = "third-party";
 		};
-		8B9DA4BC1F5033010092CC93 /* PBXContainerItemProxy */ = {
+		8BA1416E1F544D250067482F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 3D383D3C1EBD27B6005632C8;
 			remoteInfo = "third-party-tvOS";
 		};
-		8B9DA4BE1F5033010092CC93 /* PBXContainerItemProxy */ = {
+		8BA141701F544D250067482F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 139D7E881E25C6D100323FB7;
 			remoteInfo = "double-conversion";
 		};
-		8B9DA4C01F5033010092CC93 /* PBXContainerItemProxy */ = {
+		8BA141721F544D250067482F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 3D383D621EBD27B9005632C8;
 			remoteInfo = "double-conversion-tvOS";
 		};
-		8B9DA4C31F5033010092CC93 /* PBXContainerItemProxy */ = {
+		8BA141751F544D250067482F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 48B1E168C3D34259B91B46AC /* ReactNativeLocalization.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 7B5D9D0A1B6AD0EA00CF3A83;
 			remoteInfo = ReactNativeLocalization;
-		};
-		8B9DA4D41F5048970092CC93 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8C2486A0F2E414D98F599AE /* AirMaps.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 11FA5C511C4A1296003AC2EE;
-			remoteInfo = AirMaps;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -301,8 +293,6 @@
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		89D8E00C904C41AD9C1EBCBC /* libReactNativeLocalization.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libReactNativeLocalization.a; sourceTree = "<group>"; };
-		B8C2486A0F2E414D98F599AE /* AirMaps.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = AirMaps.xcodeproj; path = "../node_modules/react-native-maps/lib/ios/AirMaps.xcodeproj"; sourceTree = "<group>"; };
-		C9B3B4D06D914F9DB6418119 /* libAirMaps.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libAirMaps.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -330,7 +320,6 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				109B9992A00C46E3ABF19A08 /* libReactNativeLocalization.a in Frameworks */,
-				E322F7D1A73B496999FC3ADC /* libAirMaps.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,10 +450,10 @@
 				3DAD3EAB1DF850E9000B6D8A /* libcxxreact.a */,
 				3DAD3EAD1DF850E9000B6D8A /* libjschelpers.a */,
 				3DAD3EAF1DF850E9000B6D8A /* libjschelpers.a */,
-				8B9DA4BB1F5033010092CC93 /* libthird-party.a */,
-				8B9DA4BD1F5033010092CC93 /* libthird-party.a */,
-				8B9DA4BF1F5033010092CC93 /* libdouble-conversion.a */,
-				8B9DA4C11F5033010092CC93 /* libdouble-conversion.a */,
+				8BA1416D1F544D250067482F /* libthird-party.a */,
+				8BA1416F1F544D250067482F /* libthird-party.a */,
+				8BA141711F544D250067482F /* libdouble-conversion.a */,
+				8BA141731F544D250067482F /* libdouble-conversion.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -502,7 +491,6 @@
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				48B1E168C3D34259B91B46AC /* ReactNativeLocalization.xcodeproj */,
-				B8C2486A0F2E414D98F599AE /* AirMaps.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -539,18 +527,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8B9DA49B1F5033010092CC93 /* Products */ = {
+		8BA1414D1F544D1A0067482F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8B9DA4C41F5033010092CC93 /* libReactNativeLocalization.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		8B9DA4D11F5048970092CC93 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8B9DA4D51F5048970092CC93 /* libAirMaps.a */,
+				8BA141761F544D250067482F /* libReactNativeLocalization.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -667,10 +647,6 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 8B9DA4D11F5048970092CC93 /* Products */;
-					ProjectRef = B8C2486A0F2E414D98F599AE /* AirMaps.xcodeproj */;
-				},
-				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
 					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
 				},
@@ -715,7 +691,7 @@
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
 				{
-					ProductGroup = 8B9DA49B1F5033010092CC93 /* Products */;
+					ProductGroup = 8BA1414D1F544D1A0067482F /* Products */;
 					ProjectRef = 48B1E168C3D34259B91B46AC /* ReactNativeLocalization.xcodeproj */;
 				},
 			);
@@ -905,46 +881,39 @@
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		8B9DA4BB1F5033010092CC93 /* libthird-party.a */ = {
+		8BA1416D1F544D250067482F /* libthird-party.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libthird-party.a";
-			remoteRef = 8B9DA4BA1F5033010092CC93 /* PBXContainerItemProxy */;
+			remoteRef = 8BA1416C1F544D250067482F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		8B9DA4BD1F5033010092CC93 /* libthird-party.a */ = {
+		8BA1416F1F544D250067482F /* libthird-party.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libthird-party.a";
-			remoteRef = 8B9DA4BC1F5033010092CC93 /* PBXContainerItemProxy */;
+			remoteRef = 8BA1416E1F544D250067482F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		8B9DA4BF1F5033010092CC93 /* libdouble-conversion.a */ = {
+		8BA141711F544D250067482F /* libdouble-conversion.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libdouble-conversion.a";
-			remoteRef = 8B9DA4BE1F5033010092CC93 /* PBXContainerItemProxy */;
+			remoteRef = 8BA141701F544D250067482F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		8B9DA4C11F5033010092CC93 /* libdouble-conversion.a */ = {
+		8BA141731F544D250067482F /* libdouble-conversion.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libdouble-conversion.a";
-			remoteRef = 8B9DA4C01F5033010092CC93 /* PBXContainerItemProxy */;
+			remoteRef = 8BA141721F544D250067482F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		8B9DA4C41F5033010092CC93 /* libReactNativeLocalization.a */ = {
+		8BA141761F544D250067482F /* libReactNativeLocalization.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libReactNativeLocalization.a;
-			remoteRef = 8B9DA4C31F5033010092CC93 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		8B9DA4D51F5048970092CC93 /* libAirMaps.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libAirMaps.a;
-			remoteRef = 8B9DA4D41F5048970092CC93 /* PBXContainerItemProxy */;
+			remoteRef = 8BA141751F544D250067482F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1088,14 +1057,12 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-localization",
-					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
 				);
 				INFOPLIST_FILE = DiscountsTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1115,14 +1082,12 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-localization",
-					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
 				);
 				INFOPLIST_FILE = DiscountsTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1143,7 +1108,6 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-localization",
-					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
 				);
 				INFOPLIST_FILE = Discounts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1165,7 +1129,6 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-localization",
-					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
 				);
 				INFOPLIST_FILE = Discounts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1194,13 +1157,11 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-localization",
-					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
 				);
 				INFOPLIST_FILE = "Discounts-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1230,13 +1191,11 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-localization",
-					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
 				);
 				INFOPLIST_FILE = "Discounts-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1267,7 +1226,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Discounts-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1292,7 +1250,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Discounts-tvOSTests";
