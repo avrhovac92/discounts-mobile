@@ -5,7 +5,7 @@
  */
 import { StyleSheet } from 'react-native';
 import { navigationProps } from '../types';
-import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
+import MapView from 'react-native-maps';
 import React from 'react';
 
 import MarkerView from './MarkerView';
@@ -22,7 +22,6 @@ const Navigation = ({
       style={styles.container}
       onRegionChangeComplete={onRegionChange}
       customMapStyle={mapStyle}
-      provider={PROVIDER_GOOGLE}
       region={region}
     >
       <MapView.Marker
