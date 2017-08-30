@@ -1,6 +1,7 @@
 // App actions
 export const APP_INIT_LANGUAGES = 'APP_INIT_LANGUAGES';
 export const APP_SET_LANGUAGE = 'APP_SET_LANGUAGE';
+export const APP_ADD_LOCATION = 'APP_ADD_LOCATION';
 export const ONLINE = 'ONLINE';
 export const OFFLINE = 'OFFLINE';
 

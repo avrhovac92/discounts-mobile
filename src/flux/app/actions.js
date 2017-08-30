@@ -14,6 +14,7 @@ export function onAppStart(): Function {
   return function(dispatch: Function, getState: Function) {
     //To be done on app starting
     dispatch(initLanguages());
+    dispatch(getLocation());
   };
 }
 
@@ -39,6 +40,21 @@ export function offline() {
     dispatch({
       type: types.OFFLINE
     });
+  };
+}
+
+export function getLocation() {
+  return function(dispatch: Function) {
+    navigator.geolocation.getCurrentPosition(
+      position => {
+        dispatch({
+          type: types.APP_ADD_LOCATION,
+          position
+        });
+      },
+      error => console.log(error.message),
+      { timeout: 20000, maximumAge: 1000 }
+    );
   };
 }
 

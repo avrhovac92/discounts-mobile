@@ -3,7 +3,7 @@
  *
  * @flow
  */
-import { StyleSheet } from 'react-native';
+import { StyleSheet, View, ActivityIndicator } from 'react-native';
 import { navigationProps } from '../types';
 import MapView from 'react-native-maps';
 import React from 'react';
@@ -15,26 +15,36 @@ import mapStyle from '@assets/mapStyle.json';
 const Navigation = ({
   region,
   onRegionChange,
-  initialRegion
+  userPosition
 }: navigationProps) => {
-  return (
+  return region.longitude && region.latitude ? (
     <MapView
       style={styles.container}
-      onRegionChangeComplete={onRegionChange}
       customMapStyle={mapStyle}
       region={region}
+      onRegionChangeComplete={onRegionChange}
+      zoomEnabled={false}
+      showsUserLocation={true}
+      followsUserLocation={true}
+      showsCompass={true}
     >
-      <MapView.Marker
-        coordinate={{
-          latitude: 44.762855,
-          longitude: 17.18251
-        }}
-      >
+      <MapView.Marker coordinate={userPosition}>
         <MapView.Callout>
           <MarkerView />
         </MapView.Callout>
       </MapView.Marker>
     </MapView>
+  ) : (
+    <View
+      style={{
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#F5FCFF'
+      }}
+    >
+      <ActivityIndicator animating={true} size="large" color="#000" />
+    </View>
   );
 };
 
